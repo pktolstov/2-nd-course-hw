@@ -160,7 +160,6 @@ $game_h2_font_size: 32px;
 .games-intro-title {
     padding-top: 94px;
     padding-bottom: 72px;
-    margin-left: 119px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -223,7 +222,6 @@ $game_h2_font_size: 32px;
         border-radius: 30px;
         box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
         background: rgb(255, 255, 255);
-        background-image: url(img/game_frame1.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 165%;
@@ -265,6 +263,12 @@ $game_h2_font_size: 32px;
         text-align: left;
     }
 
+    .card-img-1 {
+        background-image: url(img/game_frame1_1.svg);
+        background-size: 100%;
+    }
+
+
     .card-img-2 {
         background-image: url(img/game_frame2.svg);
         background-size: 165%;
@@ -276,13 +280,31 @@ $game_h2_font_size: 32px;
     }
 
     .card-img-4 {
-        background-image: url(img/game_frame4.svg);
-        background-size: 165%;
+        position: relative;
+        background-image: url(img/game_frame4_1.svg);
+        background-size: 100%;
+
+        .sign-comrade {
+            /* ✊ */
+            position: absolute;
+            width: 96px;
+            height: 98px;
+            left: 37%;
+            top: 35%;
+            font-size: 87px;
+            font-weight: 800;
+            line-height: 110%;
+            letter-spacing: 0px;
+            text-align: center;
+            background: #FFC700;
+
+
+        }
     }
 
     .card-img-5 {
-        background-image: url(img/game_frame5.svg);
-        background-size: 165%;
+        background-image: url(img/game_frame5_1.svg);
+        background-size: 100%;
     }
 
     .card-img-6 {
@@ -291,4 +313,9 @@ $game_h2_font_size: 32px;
     }
 
 
+}
+
+.games {
+    background-color: $color_black;
+    padding-top: 46px;
 }
