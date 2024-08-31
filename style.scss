@@ -83,33 +83,33 @@ $game_h2_font_size: 32px;
 
     &__star1 {
         position: absolute;
-        top: 69px;
-        left: 159px;
+        top: 9%;
+        left: 11%;
     }
 
     &__star2 {
         position: absolute;
-        top: 94px;
-        left: 63px;
+        top: 12%;
+        left: 4%;
 
     }
 
     &__star3 {
         position: absolute;
-        top: 538px;
-        left: 938px;
+        top: 67%;
+        left: 65%;
     }
 
     &__star4 {
         position: absolute;
-        top: 568px;
-        left: 1013px;
+        top: 71%;
+        left: 71%;
     }
 
     &__star5 {
         position: absolute;
-        top: -334px;
-        left: 854px;
+        top: -50%;
+        left: 58%;
     }
 
     &__dynamic-frame {
@@ -130,31 +130,35 @@ $game_h2_font_size: 32px;
 
 .games-intro {
     background-color: $color_black;
+    background-image: url(img/star_big_grbrder.svg);
+    background-repeat: no-repeat;
+    background-position-x: 112%;
+    background-position-y: 10%;
 
     &__star1 {
         position: absolute;
-        left: 28px;
-        top: 1570px;
+        left: 2%;
+        top: 97%;
         box-sizing: border-box;
         transform: rotate(5.45eg);
     }
 
     &__star2 {
         position: absolute;
-        left: 45px;
-        top: 1622px;
+        left: 3%;
+        top: 100%;
         box-sizing: border-box;
         transform: rotate(5.45eg);
     }
 
-    &__star3 {
+    /*   &__star3 {
         position: absolute;
-        left: 933px;
-        top: 946px;
+        left: 68%;
+        top: 55%;
         box-sizing: border-box;
         transform: rotate(5.45eg);
-        z-index: 1;
-    }
+        z-index: 1; 
+    } */
 }
 
 .games-intro-title {
@@ -215,6 +219,11 @@ $game_h2_font_size: 32px;
     border-radius: $game_card_brdr_radius;
     background: #fff;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+
+    &:hover {
+        scale: 109%;
+        transition: 0.5s;
+    }
 
     &__img {
         height: 314px;
