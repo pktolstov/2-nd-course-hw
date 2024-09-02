@@ -32,6 +32,10 @@ $game_h2_font_size: 32px;
     position: relative;
     background-color: $color_green_light;
     height: 800px;
+    background-image: url(img/group_star_big.svg);
+    background-repeat: no-repeat;
+    background-position-x: 57vw;
+    background-position-y: -20vh;
 
     &__title {
 
@@ -116,7 +120,7 @@ $game_h2_font_size: 32px;
         position: absolute;
         left: -30px;
         height: 90px;
-        width: 3320px;
+        width: 100.5vw;
         background-color: $color_green;
         margin-top: 156px;
     }
@@ -210,6 +214,10 @@ $game_h2_font_size: 32px;
     gap: 32px;
 }
 
+.games-intro-card-link {
+    display: block;
+}
+
 .games-intro-card {
     /*  grid-column: span 4; */
     display: flex;
@@ -219,10 +227,11 @@ $game_h2_font_size: 32px;
     border-radius: $game_card_brdr_radius;
     background: #fff;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    transition: 0.5s;
 
     &:hover {
         scale: 109%;
-        transition: 0.5s;
+
     }
 
     &__img {
@@ -254,19 +263,19 @@ $game_h2_font_size: 32px;
         border-radius: $game_bttn_brdr_radius;
         background-color: #f7f7f7;
 
-        &_p {
-            width: 80px;
-            height: 18px;
-            padding: 8px 16px 10px 16px;
-            font-family: $font_family_common;
-            font-size: $game_bttn_font_size;
-            font-weight: 500;
-            line-height: 110%;
-            letter-spacing: 0px;
-            text-align: center;
-            color: $color_black;
-        }
+    }
 
+    &__button-p {
+        width: 80px;
+        height: 18px;
+        padding: 8px 16px 10px 16px;
+        font-family: $font_family_common;
+        font-size: $game_bttn_font_size;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $color_black;
     }
 
     &__title {
