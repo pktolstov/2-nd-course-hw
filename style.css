@@ -122,14 +122,14 @@ a {
 .games-intro__star1 {
   position: absolute;
   left: 2%;
-  top: 97%;
+  top: 142%;
   box-sizing: border-box;
   transform: rotate(5.45eg);
 }
 .games-intro__star2 {
   position: absolute;
   left: 3%;
-  top: 100%;
+  top: 146%;
   box-sizing: border-box;
   transform: rotate(5.45eg);
 }
@@ -219,12 +219,18 @@ a {
   border: none;
   border-radius: 53px;
   background-color: #f7f7f7;
+}
+.games-intro-card__button_p {
+  width: 80px;
+  height: 18px;
+  padding: 8px 16px 10px 16px;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0px;
   text-align: center;
+  color: #202027;
 }
 .games-intro-card__title {
   font-size: 32px;
