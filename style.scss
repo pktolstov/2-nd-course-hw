@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+$font_family_common: Montserrat;
+$color_green: #BCEC30;
+$color_green_light: #E1FF8F;
+$color_black: #202027;
+$button_border_radius: 60px;
+$font_size_h1: 64px;
+$game_card_brdr_radius: 30px;
+$game_bttn_brdr_radius: 53px;
+$game_bttn_color: #F7F7F7;
+$game_bttn_font_size: 16px;
+$game_h2_font_size: 32px;
+
+.top {
+    position: relative;
+    background-color: $color_green_light;
+    height: 800px;
+    background-image: url(img/group_star_big.svg);
+    background-repeat: no-repeat;
+    background-position-x: 57vw;
+    background-position-y: -20vh;
+
+    &__title {
+
+        font-size: 63px;
+        font-family: $font_family_common;
+        flood-color: $color_black;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        letter-spacing: 0px;
+    }
+
+    &__description {
+        margin-top: 24px;
+        font-family: $font_family_common;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+
+        &_bold {
+            font-weight: 600;
+        }
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        margin-top: 48px;
+        box-sizing: border-box;
+        border: 1 solid $color_black;
+        border-radius: $button_border_radius;
+        background: $color_black;
+        color: #fff;
+        font-family: $font_family_common;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 142%;
+        letter-spacing: 0px;
+        text-align: center;
+
+        &:hover {
+            background: #fff;
+            color: $color_black;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+    }
+
+    &__star1 {
+        position: absolute;
+        top: 9%;
+        left: 11%;
+    }
+
+    &__star2 {
+        position: absolute;
+        top: 12%;
+        left: 4%;
+
+    }
+
+    &__star3 {
+        position: absolute;
+        top: 67%;
+        left: 65%;
+    }
+
+    &__star4 {
+        position: absolute;
+        top: 71%;
+        left: 71%;
+    }
+
+    &__star5 {
+        position: absolute;
+        top: -50%;
+        left: 58%;
+    }
+
+    &__dynamic-frame {
+        position: absolute;
+        left: -30px;
+        height: 90px;
+        width: 100.5vw;
+        background-color: $color_green;
+        margin-top: 156px;
+    }
+}
+
+.title {
+    width: 768px;
+    padding-top: 196px;
+    box-sizing: border-box;
+}
+
+.games-intro {
+    background-color: $color_black;
+    background-image: url(img/star_big_grbrder.svg);
+    background-repeat: no-repeat;
+    background-position-x: 112%;
+    background-position-y: 10%;
+
+    &__star1 {
+        position: absolute;
+        left: 2%;
+        top: 142%;
+        box-sizing: border-box;
+        transform: rotate(5.45eg);
+    }
+
+    &__star2 {
+        position: absolute;
+        left: 3%;
+        top: 146%;
+        box-sizing: border-box;
+        transform: rotate(5.45eg);
+    }
+
+    /*   &__star3 {
+        position: absolute;
+        left: 68%;
+        top: 55%;
+        box-sizing: border-box;
+        transform: rotate(5.45eg);
+        z-index: 1; 
+    } */
+}
+
+.games-intro-title {
+    padding-top: 94px;
+    padding-bottom: 72px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: flex-start;
+
+    &__heading {
+        font-family: $font_family_common;
+        font-size: $font_size_h1;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #fff;
+    }
+
+    &__description {
+        width: 788px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+
+
+.games-intro-items {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    /*   display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    */
+}
+
+
+.games-intro-double {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.games-intro-card-link {
+    display: block;
+}
+
+.games-intro-card {
+    /*  grid-column: span 4; */
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    /* height: 473px; */
+    border-radius: $game_card_brdr_radius;
+    background: #fff;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    transition: 0.5s;
+
+    &:hover {
+        scale: 109%;
+
+    }
+
+    &__img {
+        height: 314px;
+        width: 378px;
+        border-radius: 30px;
+        box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 165%;
+    }
+
+    &__text {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 36px;
+    }
+
+    &__button {
+        width: 108px;
+        height: 35px;
+        border: none;
+        border-radius: $game_bttn_brdr_radius;
+        background-color: #f7f7f7;
+
+    }
+
+    &__button-p {
+        width: 80px;
+        height: 18px;
+        padding: 8px 16px 10px 16px;
+        font-family: $font_family_common;
+        font-size: $game_bttn_font_size;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $color_black;
+    }
+
+    &__title {
+        font-size: $game_h2_font_size;
+        font-family: $font_family_common;
+        color: $color_black;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .card-img-1 {
+        background-image: url(img/game_frame1_1.svg);
+        background-size: 100%;
+    }
+
+
+    .card-img-2 {
+        background-image: url(img/game_frame2.svg);
+        background-size: 165%;
+    }
+
+    .card-img-3 {
+        background-image: url(img/game_frame3.svg);
+        background-size: 165%;
+    }
+
+    .card-img-4 {
+        position: relative;
+        background-image: url(img/game_frame4_1.svg);
+        background-size: 100%;
+
+        .sign-comrade {
+            /* ✊ */
+            position: absolute;
+            width: 96px;
+            height: 98px;
+            left: 37%;
+            top: 35%;
+            font-size: 87px;
+            font-weight: 800;
+            line-height: 110%;
+            letter-spacing: 0px;
+            text-align: center;
+            background: #FFC700;
+
+
+        }
+    }
+
+    .card-img-5 {
+        background-image: url(img/game_frame5_1.svg);
+        background-size: 100%;
+    }
+
+    .card-img-6 {
+        background-image: url(img/game_frame6.svg);
+        background-size: 165%;
+    }
+
+
+}
+
+.games {
+    background-color: $color_black;
+    padding-top: 46px;
+}
