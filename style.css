@@ -35,6 +35,9 @@ a {
   text-align: left;
   letter-spacing: 0px;
 }
+.top .title-mobile {
+  display: none;
+}
 .top__description {
   margin-top: 24px;
   font-family: Montserrat;
@@ -157,6 +160,9 @@ a {
   text-align: left;
   color: #fff;
 }
+.games-intro-title__heading-mobile {
+  display: none;
+}
 .games-intro-title__description {
   width: 788px;
   color: #fff;
@@ -249,6 +255,15 @@ a {
   letter-spacing: 0px;
   text-align: left;
 }
+.games-intro-card__description {
+  display: none;
+}
+.games-intro-card__title-mobile {
+  display: none;
+}
+.games-intro-card__button-mobile {
+  display: none;
+}
 .games-intro-card .card-img-1 {
   background-image: url(img/game_frame1_1.svg);
   background-size: 100%;
@@ -292,4 +307,178 @@ a {
 .games {
   background-color: #202027;
   padding-top: 46px;
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+    background-image: url(img/star_big_mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: 57vw;
+    background-position-y: -9vh;
+  }
+  .top__star1 {
+    top: 17vw;
+    left: 10vh;
+    width: 21px;
+    height: 21px;
+  }
+  .top__star2 {
+    top: 29vw;
+    left: 5vh;
+    width: 35px;
+    height: 35px;
+  }
+  .top__star3 {
+    top: 152vw;
+    left: 30vh;
+    width: 18px;
+    height: 18px;
+  }
+  .top__star4 {
+    top: 160vw;
+    left: 33vh;
+    width: 41px;
+    height: 41px;
+  }
+  .top .title {
+    display: none;
+  }
+  .top .title-mobile {
+    padding-top: 147px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top .title-mobile__h1 {
+    font-size: 40px;
+    font-family: Montserrat;
+    flood-color: #202027;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0px;
+  }
+  .top .title-mobile__description {
+    padding-top: 24px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+  .top .title-mobile__description_bold {
+    font-weight: 600;
+  }
+  .top .title-mobile__button {
+    width: 285px;
+    height: 55px;
+    margin-top: 36px;
+    box-sizing: border-box;
+    border: 1 solid #202027;
+    border-radius: 60px;
+    background: #202027;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 142%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top .title-mobile__button:hover {
+    background: #fff;
+    color: #202027;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .top__dynamic-frame {
+    height: 51px;
+    width: 108vw;
+  }
+  .games-intro {
+    background-image: none;
+  }
+  .games-intro__star1 {
+    display: none;
+  }
+  .games-intro__star2 {
+    display: none;
+  }
+  .games-intro-title__heading {
+    display: none;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .games-intro-title__description {
+    display: none;
+  }
+  .games-intro-title__heading-mobile {
+    display: block;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+  }
+  .games-intro-double {
+    gap: 24px;
+  }
+  .games-intro-card {
+    width: 343px;
+  }
+  .games-intro-card__img {
+    height: 284px;
+    width: 343px;
+  }
+  .games-intro-card__button {
+    display: none;
+  }
+  .games-intro-card__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .games-intro-card .hidden-game-name {
+    display: none;
+  }
+  .games-intro-card__title-mobile {
+    display: block;
+    font-family: Montserrat;
+    color: #202027;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .games-intro-card .turn-out-text-game {
+    display: block;
+  }
+  .games-intro-card__description {
+    display: block;
+    color: #202027;
+  }
+  .games-intro-card__button-mobile {
+    display: block;
+    width: 285px;
+    height: 55px;
+    margin-top: 36px;
+    box-sizing: border-box;
+    border: 1 solid #202027;
+    border-radius: 60px;
+    background: #202027;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 142%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

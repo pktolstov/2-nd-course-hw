@@ -48,6 +48,10 @@ $game_h2_font_size: 32px;
         letter-spacing: 0px;
     }
 
+    .title-mobile {
+        display: none;
+    }
+
     &__description {
         margin-top: 24px;
         font-family: $font_family_common;
@@ -185,6 +189,10 @@ $game_h2_font_size: 32px;
         color: #fff;
     }
 
+    &__heading-mobile {
+        display: none;
+    }
+
     &__description {
         width: 788px;
         color: #fff;
@@ -287,6 +295,16 @@ $game_h2_font_size: 32px;
         letter-spacing: 0px;
         text-align: left;
     }
+    &__description {
+        display: none;
+    }
+
+    &__title-mobile {
+        display: none;
+    }
+    &__button-mobile {
+        display: none;
+    }
 
     .card-img-1 {
         background-image: url(img/game_frame1_1.svg);
@@ -344,3 +362,5 @@ $game_h2_font_size: 32px;
     background-color: $color_black;
     padding-top: 46px;
 }
+
+@import "mobile";

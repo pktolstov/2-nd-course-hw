@@ -1,0 +1,214 @@
+@media (max-width: 768px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 700px;
+        background-image: url(img/star_big_mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x: 57vw;
+        background-position-y: -9vh;
+
+        &__star1 {
+            top: 17vw;
+            left: 10vh;
+            width: 21px;
+            height: 21px;
+        }
+
+        &__star2 {
+            top: 29vw;
+            left: 5vh;
+            width: 35px;
+            height: 35px;
+        }
+
+        &__star3 {
+            top: 152vw;
+            left: 30vh;
+            width: 18px;
+            height: 18px;
+        }
+
+        &__star4 {
+            top: 160vw;
+            left: 33vh;
+            width: 41px;
+            height: 41px;
+        }
+
+        .title {
+            display: none;
+        }
+
+
+
+        .title-mobile {
+            padding-top: 147px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+
+            &__h1 {
+                font-size: 40px;
+                font-family: $font_family_common;
+                flood-color: $color_black;
+                font-weight: 700;
+                line-height: 49px;
+                text-align: center;
+                letter-spacing: 0px;
+            }
+
+            &__description {
+                padding-top: 24px;
+                font-family: $font_family_common;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+
+                &_bold {
+                    font-weight: 600;
+                }
+            }
+
+            &__button {
+                width: 285px;
+                height: 55px;
+                margin-top: 36px;
+                box-sizing: border-box;
+                border: 1 solid $color_black;
+                border-radius: $button_border_radius;
+                background: $color_black;
+                color: #fff;
+                font-family: $font_family_common;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 142%;
+                letter-spacing: 0px;
+                text-align: center;
+
+
+                &:hover {
+                    background: #fff;
+                    color: $color_black;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        &__dynamic-frame {
+            height: 51px;
+            width: 108vw;
+        }
+
+    }
+
+    .games-intro {
+        background-image: none;
+
+        &__star1 {
+            display: none;
+        }
+
+        &__star2 {
+            display: none;
+        }
+    }
+
+    .games-intro-title {
+        &__heading {
+            display: none;
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        &__description {
+            display: none;
+        }
+
+        &__heading-mobile {
+            display: block;
+            font-family: $font_family_common;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #fff;
+        }
+
+    }
+
+    .games-intro-double {
+        gap: 24px;
+    }
+
+    .games-intro-card {
+        width: 343px;
+
+        &__img {
+            height: 284px;
+            width: 343px;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        .hidden-game-name {
+            display: none;
+        }
+
+        &__title-mobile {
+            display: block;
+            font-family: $font_family_common;
+            color: $color_black;
+            font-weight: 700;
+            letter-spacing: 0px;
+            text-align: left;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        .turn-out-text-game {
+            display: block;
+        }
+
+        &__description {
+            display: block;
+            color: $color_black;
+
+        }
+
+        &__button-mobile {
+            display: block;
+            width: 285px;
+            height: 55px;
+            margin-top: 36px;
+            box-sizing: border-box;
+            border: 1 solid $color_black;
+            border-radius: $button_border_radius;
+            background: $color_black;
+            color: #fff;
+            font-family: $font_family_common;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 142%;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+
+    }
+}
