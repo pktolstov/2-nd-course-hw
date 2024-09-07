@@ -20,14 +20,14 @@ console.log(javaScriptOwner);
 //task4
 let firstNumber = 10;
 let secondNumber = 2;
-alert(10 + 2);
-console.log(10 + 2);
-alert(10 - 2);
-console.log(10 - 2);
-alert(10 * 2);
-console.log(10 * 2);
-alert(10 / 2);
-console.log(10 / 2);
+alert(firstNumber + secondNumber);
+console.log(firstNumber + secondNumber);
+alert(firstNumber - secondNumber);
+console.log(firstNumber - secondNumber);
+alert(firstNumber * secondNumber);
+console.log(firstNumber * secondNumber);
+alert(firstNumber / secondNumber);
+console.log(firstNumber / secondNumber);
 
 
 //task5

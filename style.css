@@ -115,8 +115,8 @@ a {
   background-color: #202027;
   background-image: url(img/star_big_grbrder.svg);
   background-repeat: no-repeat;
-  background-position-x: 112%;
-  background-position-y: 10%;
+  background-position-x: 114%;
+  background-position-y: 2%;
   /*   &__star3 {
       position: absolute;
       left: 68%;
@@ -128,15 +128,43 @@ a {
 }
 .games-intro__star1 {
   position: absolute;
-  left: 2%;
-  top: 142%;
+  left: 3vw;
+  top: 102vh;
   box-sizing: border-box;
   transform: rotate(5.45eg);
 }
 .games-intro__star2 {
   position: absolute;
-  left: 3%;
-  top: 146%;
+  left: 5vw;
+  top: 105vh;
+  box-sizing: border-box;
+  transform: rotate(5.45eg);
+}
+.games-intro__star3 {
+  position: absolute;
+  left: 86vw;
+  top: 152vh;
+  box-sizing: border-box;
+  transform: rotate(5.45eg);
+}
+.games-intro__star4 {
+  position: absolute;
+  left: 89vw;
+  top: 154vh;
+  box-sizing: border-box;
+  transform: rotate(5.45eg);
+}
+.games-intro__star5 {
+  position: absolute;
+  left: 86vw;
+  top: 367vh;
+  box-sizing: border-box;
+  transform: rotate(5.45eg);
+}
+.games-intro__star6 {
+  position: absolute;
+  left: 89vw;
+  top: 364vh;
   box-sizing: border-box;
   transform: rotate(5.45eg);
 }
@@ -271,15 +299,18 @@ a {
 .games-intro-card .card-img-2 {
   background-image: url(img/game_frame2.svg);
   background-size: 165%;
+  background-color: rgba(250, 168, 3, 0.9725490196);
 }
 .games-intro-card .card-img-3 {
   background-image: url(img/game_frame3.svg);
   background-size: 165%;
+  background-color: #5956d9;
 }
 .games-intro-card .card-img-4 {
   position: relative;
   background-image: url(img/game_frame4_1.svg);
   background-size: 100%;
+  background-color: #241a58;
 }
 .games-intro-card .card-img-4 .sign-comrade {
   /* ✊ */
@@ -302,11 +333,132 @@ a {
 .games-intro-card .card-img-6 {
   background-image: url(img/game_frame6.svg);
   background-size: 165%;
+  background-color: #241a58;
 }
 
 .games {
   background-color: #202027;
   padding-top: 46px;
+  padding-bottom: 144px;
+  background-image: url(img/star_small_grbrder.svg);
+  background-repeat: no-repeat;
+  background-position-x: 112%;
+  background-position-y: 2%;
+}
+.games__heading {
+  margin-top: 46px;
+  margin-bottom: 72px;
+}
+
+.games-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mini-game-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  border-radius: 30px;
+}
+.mini-game-item_reverce {
+  flex-direction: row-reverse;
+}
+
+.mini-game-item-half {
+  box-sizing: border-box;
+  width: 600px;
+  height: 500px;
+  padding: 48px;
+}
+
+.mini-game-info {
+  display: flex;
+  flex-direction: column;
+}
+.mini-game-info__title {
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.mini-game-info__description {
+  height: 64px;
+}
+.mini-game-info__button {
+  margin-top: 32px;
+}
+
+.mini-game-img {
+  width: 600px;
+  height: 500px;
+  background-size: 101%;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mini-game-img_1 {
+  background-image: url(img/game_frame1_1.svg);
+  background-size: 102%;
+}
+.mini-game-img_2 {
+  background-image: url(img/game_frame2.svg);
+  background-size: 163%;
+  background-color: rgba(250, 168, 3, 0.9725490196);
+}
+.mini-game-img_3 {
+  background-image: url(img/game_frame3.svg);
+  background-size: 199%;
+  background-color: #5956d9;
+}
+.mini-game-img_4 {
+  background-image: url(img/game_frame5_1.svg);
+  background-size: 102%;
+}
+.mini-game-img_5 {
+  position: relative;
+  background-image: url(img/game_frame4_1.svg);
+  background-size: 100%;
+  background-color: #241a58;
+}
+.mini-game-img_5 .mini-game-img-sign-comrade {
+  position: absolute;
+  width: 153px;
+  height: 164px;
+  left: 37%;
+  top: 35%;
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: center;
+  background: #FFC700;
+}
+.mini-game-img_6 {
+  background-image: url(img/game_frame6.svg);
+  background-size: 157%;
+  background-color: #241a58;
+}
+
+.footer {
+  height: 150px;
+  color: #BDED35;
+  background-color: #BDED35;
+}
+.footer__rights {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #202027;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
