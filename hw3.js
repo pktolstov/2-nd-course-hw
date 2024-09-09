@@ -1,7 +1,7 @@
 // Task 1
 let password = 'Pass4*good';
 let userPass = prompt('Введите пароль');
-if (password === password) {
+if (userPass === password) {
     alert('Пароль введен верно');
     console.log('Пароль введен верно');
 } else {
