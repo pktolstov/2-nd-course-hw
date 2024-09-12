@@ -23,8 +23,10 @@ a {
   height: 800px;
   background-image: url(img/group_star_big.svg);
   background-repeat: no-repeat;
-  background-position-x: 57vw;
-  background-position-y: -20vh;
+  /*   background-position-x: 57vw;
+  background-position-y: -20vh; */
+  background-position-x: calc(100% + 370px);
+  background-position-y: calc(0% - 310px);
 }
 .top__title {
   font-size: 63px;
@@ -484,6 +486,8 @@ a {
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 0%;
+    /*      background-position-x: calc(100% + 125px);
+    background-position-y: calc(0% - 110px);  */
   }
   .top__star1 {
     display: none;
@@ -578,6 +582,10 @@ a {
     height: 51px;
     width: 108vw;
   }
+  .games {
+    padding-top: 0px;
+    padding-bottom: 48px;
+  }
   .games-intro {
     background-image: none;
   }
@@ -586,6 +594,10 @@ a {
   }
   .games-intro__star2 {
     display: none;
+  }
+  .games-intro-title {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .games-intro-title__heading {
     display: none;

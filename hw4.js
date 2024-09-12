@@ -6,18 +6,18 @@ while (i < 2) {
 }
 
 // Task2
-let i = 1
+let z = 1
 do {
-    console.log(i);
-    i++;
-} while (i <= 5);
+    console.log(z);
+    z++;
+} while (z <= 5);
 
 // Task3
-let i = 7
+let y = 7
 do {
-    console.log(i);
-    i++;
-} while (i <= 22);
+    console.log(y);
+    y++;
+} while (y <= 22);
 
 //Task 4
 let obj = {
@@ -31,17 +31,31 @@ for (let staff in obj) {
 }
 
 // Task5
+//Некорректный код
+//let n = 1000;
+//num = 0;
+//do {
+//    if (n / 2 < 50) {
+//        console.log(n);
+//        break
+//    }
+//    n /= 2;
+//    num++;
+//} while (n > 50);
+//console.log(num)
+// Исправленный наставником код
 let n = 1000;
-num = 0;
+let num = 0;
+
 do {
-    if (n / 2 < 50) {
-        console.log(n);
-        break
-    }
-    n /= 2;
-    num++;
-} while (n > 50);
-console.log(num)
+    n /= 2;  // Делим n на 2
+    num++;   // Увеличиваем счетчик итераций
+} while (n >= 50);  // Продолжаем, пока n больше или равно 50
+
+console.log(n);  // Выводим конечный результат
+console.log(num); // Выводим количество итераций
+
+
 
 //Task6 
 for (let fridayDate = 1; fridayDate < 31; fridayDate += 7) {
@@ -75,8 +89,8 @@ let months = {
     11: 'Ноябрь',
     12: 'Декабрь'
 };
-for (let i = 1; i <= 12; i++) {
-    console.log(`${months[i]} – ${i}-й в году`)
+for (let w = 1; w <= 12; w++) {
+    console.log(`${months[w]} – ${w}-й в году`)
 };
 
 
@@ -94,7 +108,7 @@ for (let key in book) {
 //Task10 ext4
 let randomNumbers = [];
 
-for (let i = 0; i < 10; i++) {
+for (let r = 0; r < 10; r++) {
     randomNumbers.push(Math.floor(Math.random() * 100));
 }
 
