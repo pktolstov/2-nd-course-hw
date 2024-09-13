@@ -34,8 +34,10 @@ $game_h2_font_size: 32px;
     height: 800px;
     background-image: url(img/group_star_big.svg);
     background-repeat: no-repeat;
-    background-position-x: 57vw;
-    background-position-y: -20vh;
+    /*   background-position-x: 57vw;
+    background-position-y: -20vh; */
+    background-position-x: calc(100% + 370px);
+    background-position-y: calc(0% - 310px);
 
     &__title {
 
@@ -137,11 +139,14 @@ $game_h2_font_size: 32px;
 }
 
 .games-intro {
+    position: relative;
     background-color: $color_black;
-    background-image: url(img/star_big_grbrder.svg);
+    /*   background-image: url(img/star_big_grbrder.svg);  */
+    background-image: url('data:image/svg+xml,%3Csvg width="1414" height="4814" viewBox="0 0 1414 4814" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1267.57 185.338L1267.78 185.897L1268.3 185.587L1435.84 84.2785L1336.53 253.019L1336.23 253.534L1336.79 253.742L1520.46 321.57L1326.62 349.135L1326.03 349.22L1326.21 349.787L1387.7 535.677L1245.29 401.31L1244.85 400.9L1244.53 401.401L1137.53 565.373L1153.79 370.254L1153.84 369.658L1153.24 369.715L958.331 388.295L1121.02 279.354L1121.52 279.021L1121.1 278.591L985.048 137.788L1171.66 197.059L1172.23 197.24L1172.3 196.646L1197.56 2.48796L1267.57 185.338Z" stroke="%23BCEC30"/%3E%3Cpath d="M1334.68 1489.7L1341.2 1514.3L1341.26 1514.52L1341.47 1514.62L1364.39 1525.68L1339.79 1532.2L1339.57 1532.26L1339.47 1532.47L1328.41 1555.38L1321.89 1530.79L1321.83 1530.57L1321.62 1530.47L1298.7 1519.41L1323.3 1512.89L1323.52 1512.83L1323.62 1512.62L1334.68 1489.7Z" stroke="%23BCEC30"/%3E%3Cpath d="M17.4367 661.922L20.2175 672.403L20.2765 672.625L20.4836 672.725L30.2505 677.437L19.7691 680.218L19.5469 680.277L19.447 680.484L14.7352 690.251L11.9544 679.769L11.8954 679.547L11.6883 679.447L1.92137 674.736L12.4028 671.955L12.6251 671.896L12.7249 671.689L17.4367 661.922Z" stroke="%23BCEC30"/%3E%3Cpath d="M46.2217 715.026L51.3236 734.256L51.3826 734.478L51.5896 734.578L69.5086 743.222L50.2788 748.324L50.0566 748.383L49.9567 748.59L41.3123 766.509L36.2104 747.279L36.1514 747.057L35.9443 746.957L18.0254 738.313L37.2552 733.211L37.4774 733.152L37.5773 732.945L46.2217 715.026Z" stroke="%23BCEC30"/%3E%3Cpath d="M1272.6 1455.6L1275.41 1467.6L1275.47 1467.82L1275.67 1467.93L1286.62 1473.6L1274.62 1476.41L1274.39 1476.47L1274.29 1476.67L1268.62 1487.61L1265.8 1475.62L1265.75 1475.39L1265.54 1475.29L1254.6 1469.62L1266.6 1466.8L1266.82 1466.74L1266.93 1466.54L1272.6 1455.6Z" stroke="%23BCEC30"/%3E%3Cpath d="M1327.5 4726.44L1336.35 4750.36L1336.43 4750.57L1336.64 4750.65L1360.56 4759.5L1336.64 4768.35L1336.43 4768.43L1336.35 4768.64L1327.5 4792.56L1318.65 4768.64L1318.57 4768.43L1318.36 4768.35L1294.44 4759.5L1318.36 4750.65L1318.57 4750.57L1318.65 4750.36L1327.5 4726.44Z" stroke="%23BCEC30"/%3E%3Cpath d="M1243.5 4774.44L1248.57 4788.14L1248.65 4788.35L1248.86 4788.43L1262.56 4793.5L1248.86 4798.57L1248.65 4798.65L1248.57 4798.86L1243.5 4812.56L1238.43 4798.86L1238.35 4798.65L1238.14 4798.57L1224.44 4793.5L1238.14 4788.43L1238.35 4788.35L1238.43 4788.14L1243.5 4774.44Z" stroke="%23BCEC30"/%3E%3C/svg%3E');
     background-repeat: no-repeat;
-    background-position-x: 114%;
-    background-position-y: 2%;
+    background-position-x: 90%;
+    background-position-y: 71%;
+
 
     &__star1 {
         position: absolute;
@@ -199,6 +204,10 @@ $game_h2_font_size: 32px;
         transform: rotate(5.45eg);
         z-index: 1; 
     } */
+    &__back-stars {
+        position: absolute;
+        z-index: 0;
+    }
 }
 
 .games-intro-title {
@@ -415,6 +424,7 @@ $game_h2_font_size: 32px;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
 
 }
 
@@ -440,6 +450,7 @@ $game_h2_font_size: 32px;
 .mini-game-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &__title {
         color: $color_black;
@@ -454,6 +465,12 @@ $game_h2_font_size: 32px;
 
     &__description {
         height: 64px;
+    }
+
+
+
+    .mini-game-info-mobile-text-br {
+        display: none;
     }
 
     &__button {

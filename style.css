@@ -23,8 +23,10 @@ a {
   height: 800px;
   background-image: url(img/group_star_big.svg);
   background-repeat: no-repeat;
-  background-position-x: 57vw;
-  background-position-y: -20vh;
+  /*   background-position-x: 57vw;
+  background-position-y: -20vh; */
+  background-position-x: calc(100% + 370px);
+  background-position-y: calc(0% - 310px);
 }
 .top__title {
   font-size: 63px;
@@ -112,11 +114,13 @@ a {
 }
 
 .games-intro {
+  position: relative;
   background-color: #202027;
-  background-image: url(img/star_big_grbrder.svg);
+  /*   background-image: url(img/star_big_grbrder.svg);  */
+  background-image: url('data:image/svg+xml,%3Csvg width="1414" height="4814" viewBox="0 0 1414 4814" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1267.57 185.338L1267.78 185.897L1268.3 185.587L1435.84 84.2785L1336.53 253.019L1336.23 253.534L1336.79 253.742L1520.46 321.57L1326.62 349.135L1326.03 349.22L1326.21 349.787L1387.7 535.677L1245.29 401.31L1244.85 400.9L1244.53 401.401L1137.53 565.373L1153.79 370.254L1153.84 369.658L1153.24 369.715L958.331 388.295L1121.02 279.354L1121.52 279.021L1121.1 278.591L985.048 137.788L1171.66 197.059L1172.23 197.24L1172.3 196.646L1197.56 2.48796L1267.57 185.338Z" stroke="%23BCEC30"/%3E%3Cpath d="M1334.68 1489.7L1341.2 1514.3L1341.26 1514.52L1341.47 1514.62L1364.39 1525.68L1339.79 1532.2L1339.57 1532.26L1339.47 1532.47L1328.41 1555.38L1321.89 1530.79L1321.83 1530.57L1321.62 1530.47L1298.7 1519.41L1323.3 1512.89L1323.52 1512.83L1323.62 1512.62L1334.68 1489.7Z" stroke="%23BCEC30"/%3E%3Cpath d="M17.4367 661.922L20.2175 672.403L20.2765 672.625L20.4836 672.725L30.2505 677.437L19.7691 680.218L19.5469 680.277L19.447 680.484L14.7352 690.251L11.9544 679.769L11.8954 679.547L11.6883 679.447L1.92137 674.736L12.4028 671.955L12.6251 671.896L12.7249 671.689L17.4367 661.922Z" stroke="%23BCEC30"/%3E%3Cpath d="M46.2217 715.026L51.3236 734.256L51.3826 734.478L51.5896 734.578L69.5086 743.222L50.2788 748.324L50.0566 748.383L49.9567 748.59L41.3123 766.509L36.2104 747.279L36.1514 747.057L35.9443 746.957L18.0254 738.313L37.2552 733.211L37.4774 733.152L37.5773 732.945L46.2217 715.026Z" stroke="%23BCEC30"/%3E%3Cpath d="M1272.6 1455.6L1275.41 1467.6L1275.47 1467.82L1275.67 1467.93L1286.62 1473.6L1274.62 1476.41L1274.39 1476.47L1274.29 1476.67L1268.62 1487.61L1265.8 1475.62L1265.75 1475.39L1265.54 1475.29L1254.6 1469.62L1266.6 1466.8L1266.82 1466.74L1266.93 1466.54L1272.6 1455.6Z" stroke="%23BCEC30"/%3E%3Cpath d="M1327.5 4726.44L1336.35 4750.36L1336.43 4750.57L1336.64 4750.65L1360.56 4759.5L1336.64 4768.35L1336.43 4768.43L1336.35 4768.64L1327.5 4792.56L1318.65 4768.64L1318.57 4768.43L1318.36 4768.35L1294.44 4759.5L1318.36 4750.65L1318.57 4750.57L1318.65 4750.36L1327.5 4726.44Z" stroke="%23BCEC30"/%3E%3Cpath d="M1243.5 4774.44L1248.57 4788.14L1248.65 4788.35L1248.86 4788.43L1262.56 4793.5L1248.86 4798.57L1248.65 4798.65L1248.57 4798.86L1243.5 4812.56L1238.43 4798.86L1238.35 4798.65L1238.14 4798.57L1224.44 4793.5L1238.14 4788.43L1238.35 4788.35L1238.43 4788.14L1243.5 4774.44Z" stroke="%23BCEC30"/%3E%3C/svg%3E');
   background-repeat: no-repeat;
-  background-position-x: 114%;
-  background-position-y: 2%;
+  background-position-x: 90%;
+  background-position-y: 71%;
   /*   &__star3 {
       position: absolute;
       left: 68%;
@@ -167,6 +171,10 @@ a {
   top: 364vh;
   box-sizing: border-box;
   transform: rotate(5.45eg);
+}
+.games-intro__back-stars {
+  position: absolute;
+  z-index: 0;
 }
 
 .games-intro-title {
@@ -354,6 +362,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  align-items: center;
 }
 
 .mini-game-item {
@@ -376,6 +385,7 @@ a {
 .mini-game-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .mini-game-info__title {
   color: #202027;
@@ -388,6 +398,9 @@ a {
 }
 .mini-game-info__description {
   height: 64px;
+}
+.mini-game-info .mini-game-info-mobile-text-br {
+  display: none;
 }
 .mini-game-info__button {
   margin-top: 32px;
@@ -468,37 +481,54 @@ a {
   }
   .top {
     height: 700px;
-    background-image: url(img/star_big_mobile.svg);
+    /*    background-image: url(img/star_big_mobile.svg); */
+    background-image: url('data:image/svg+xml,%3Csvg width="337" height="621" viewBox="0 0 337 621" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M17.5 98.4408L21.7577 109.947L21.8375 110.163L22.0531 110.242L33.5592 114.5L22.0531 118.758L21.8375 118.837L21.7577 119.053L17.5 130.559L13.2423 119.053L13.1626 118.837L12.9469 118.758L1.44077 114.5L12.9469 110.242L13.1626 110.163L13.2423 109.947L17.5 98.4408Z" fill="%23BCEC30" stroke="%23202027"/%3E%3Cpath d="M64.5 65.4408L66.867 71.8376L66.9468 72.0532L67.1624 72.133L73.5592 74.5L67.1624 76.867L66.9468 76.9468L66.867 77.1624L64.5 83.5592L62.133 77.1624L62.0532 76.9468L61.8376 76.867L55.4408 74.5L61.8376 72.133L62.0532 72.0532L62.133 71.8376L64.5 65.4408Z" stroke="%23202027"/%3E%3Cpath d="M244 558.441L245.962 563.743L246.042 563.958L246.257 564.038L251.559 566L246.257 567.962L246.042 568.042L245.962 568.257L244 573.559L242.038 568.257L241.958 568.042L241.743 567.962L236.441 566L241.743 564.038L241.958 563.958L242.038 563.743L244 558.441Z" fill="%23BCEC30" stroke="%23202027"/%3E%3Cpath d="M285.5 581.506L290.295 595.129L290.371 595.346L290.585 595.429L303.621 600.5L290.585 605.571L290.371 605.654L290.295 605.871L285.5 619.494L280.705 605.871L280.629 605.654L280.415 605.571L267.379 600.5L280.415 595.429L280.629 595.346L280.705 595.129L285.5 581.506Z" stroke="%23202027"/%3E%3Cpath d="M341.226 10.1084C344.072 10.8901 423.284 43.9262 423.284 43.9262L339.242 52.8254L392.335 120.072L317.485 74.1373L309.858 151.995L288.761 70.0034L218.442 109.004L266.882 51.7587L180.917 47.8942L261.719 23.992L201.678 -44.2245L286.09 -5.05042L305.408 -80.6362L314.083 -4.88821L390.973 -57.1361L341.226 10.1084Z" fill="%23BCEC30" stroke="%23202027" stroke-miterlimit="10" stroke-linecap="round"/%3E%3C/svg%3E');
     background-repeat: no-repeat;
-    background-position-x: 57vw;
-    background-position-y: -9vh;
+    background-position-x: 100%;
+    background-position-y: 0%;
+    /*      background-position-x: calc(100% + 125px);
+    background-position-y: calc(0% - 110px);  */
   }
   .top__star1 {
+    display: none;
     top: 17vw;
     left: 10vh;
     width: 21px;
     height: 21px;
   }
   .top__star2 {
+    display: none;
     top: 29vw;
     left: 5vh;
     width: 35px;
     height: 35px;
   }
   .top__star3 {
+    display: none;
     top: 152vw;
     left: 30vh;
     width: 18px;
     height: 18px;
   }
   .top__star4 {
+    display: none;
     top: 160vw;
     left: 33vh;
     width: 41px;
     height: 41px;
   }
+  .top__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
   .top .title {
     display: none;
+  }
+  .top__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
   }
   .top .title-mobile {
     padding-top: 147px;
@@ -552,6 +582,10 @@ a {
     height: 51px;
     width: 108vw;
   }
+  .games {
+    padding-top: 0px;
+    padding-bottom: 48px;
+  }
   .games-intro {
     background-image: none;
   }
@@ -560,6 +594,10 @@ a {
   }
   .games-intro__star2 {
     display: none;
+  }
+  .games-intro-title {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .games-intro-title__heading {
     display: none;
@@ -578,6 +616,9 @@ a {
     letter-spacing: 0px;
     text-align: left;
     color: #fff;
+  }
+  .games-intro-items {
+    display: none;
   }
   .games-intro-double {
     gap: 24px;
@@ -632,5 +673,65 @@ a {
     line-height: 142%;
     letter-spacing: 0px;
     text-align: center;
+  }
+  .mini-game-item {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width: 343px;
+  }
+  .mini-game-item-half {
+    box-sizing: border-box;
+    width: 343px;
+    height: auto;
+    padding: 29px;
+  }
+  .mini-game-info {
+    width: auto;
+    align-items: flex-start;
+  }
+  .mini-game-info__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .mini-game-info__description {
+    margin-top: 16px;
+    height: auto;
+  }
+  .mini-game-info .ini-game-info-descktop-text-br {
+    display: none;
+  }
+  .mini-game-info .mini-game-info-mobile-text-br {
+    display: contents;
+  }
+  .mini-game-img {
+    width: 343px;
+    height: 300px;
+    background-size: 105%;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .mini-game-img_2 {
+    background-size: 202%;
+  }
+  .mini-game-img_3 {
+    background-size: 202%;
+  }
+  .mini-game-img_6 {
+    background-size: 155%;
+  }
+  .mini-game-img .mini-game-img-sign-comrade {
+    font-size: 77px;
+    width: 95px;
+    height: 90px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__rights {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
