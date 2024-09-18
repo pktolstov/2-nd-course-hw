@@ -14,7 +14,7 @@
 
 <body>
     <div class="top center">
-        
+
 
         <img class="top__star1" src="img/star_small.svg" alt="star">
         <img class="top__star2" src="img/star2_green.svg" alt="star">
@@ -175,8 +175,14 @@
                             <p class="mini-game-info__description top__description">Попробуй угадать случайное<br>число
                                 от 1
                                 до 100.</p>
-                            <button class="mini-game-info__button top__button">Играть!</button>
+                            <button onclick="startGame()" class="mini-game-info__button top__button">Играть!</button>
                         </div>
+                        <div class="mini-game-item-guess-number" id="block-game">
+                            <input class="mini-game-item-guess-number__check" type="number" id="guessInput"
+                                placeholder="Ваше число" />
+                            <button onclick="checkGuess()" class="mini-game-info__button top__button">Проверить</button>
+                        </div>
+                        <p class="mini-game-item-guess-number__answer top__description" id="result"></p>
                     </div>
                     <div class="mini-game-img mini-game-img_1"></div>
                 </div>
@@ -253,7 +259,7 @@
         <p class="footer__rights ">Все права защищены.</p>
 
     </footer>
-    <script src="hw4.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
