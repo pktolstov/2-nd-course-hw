@@ -108,3 +108,74 @@ function howOldAreYou() {
 }
 
 howOldAreYou();
+
+
+//Task 5
+
+function checkYourNumbers(aNumber, bNumber) {
+    if (isNaN(aNumber) || isNaN(bNumber)) {
+        alert('Одно или оба значения не являются числом');
+    } else {
+        return aNumber * bNumber;
+    }
+}
+
+checkYourNumbers(5, 'qwerty');
+checkYourNumbers(5, 2);
+
+
+//Task 6
+function cubeYourNumbers() {
+    let yourNumber = Number(prompt('Введите число'));
+    let cube;
+    if (isNaN(yourNumber)) {
+        return ('Переданный параметр не является числом');
+    } else if (yourNumber === 0) {
+        cube = yourNumber ** 3;
+        return '0 в кубе равняется 0';
+    } else {
+        cube = yourNumber ** 3;
+        return `${yourNumber} в кубе равняется ${cube}`;
+    }
+}
+
+cubeYourNumbers()
+
+//Task 7 
+function getArea() {
+    squar
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 5,
+    getArea() {
+        let square = Math.PI * this.radius ** 2;
+        console.log(square);
+    },
+    getPerimeter() {
+        console.log(2 * Math.PI * this.radius);
+    }
+
+
+}
+
+const circle2 = {
+    radius: 10,
+    getArea() {
+        console.log(Math.PI * this.radius ** 2);
+    },
+    getPerimeter() {
+        console.log(2 * Math.PI * this.radius);
+    }
+
+
+}
+circle1.getArea();
+circle1.getPerimeter();
+circle2.getArea();
+circle2.getPerimeter();
+
+
+
+
