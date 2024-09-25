@@ -168,8 +168,6 @@ const circle2 = {
     getPerimeter() {
         console.log(2 * Math.PI * this.radius);
     }
-
-
 }
 circle1.getArea();
 circle1.getPerimeter();
