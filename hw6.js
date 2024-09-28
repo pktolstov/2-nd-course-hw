@@ -48,6 +48,11 @@ sixthArraySorted = sixthArray.sort();
 sixthArraySorted.pop();
 console.log(sixthArraySorted);
 
+// another vary
+anotherArraySorted = sixthArray.filter(item => typeof item === 'number').sort();
+console.log(anotherArraySorted);
+
+
 // Task 7
 const seventhArray = [9, 8, 7, 6, 5];
 let userNumber = Number(prompt('Попробуйте угадать число в массиве'));
@@ -71,6 +76,11 @@ ninethArray.forEach((element) => {
     })
 })
 console.log(newArray);
+
+// Another vary
+const anotherNewArray = ninethArray.flat();
+console.log(anotherNewArray);
+
 
 // Task 10
 const tenthArray = [1, 3, 5, 7, 9];
@@ -164,7 +174,7 @@ console.log(fifTeenthArray);
 console.log(count);
 console.log(sumArray);
 
- 
+
 //Task 1
 let theFirstNumber = Math.floor((Math.random() * 20) + 1);
 let theSecondNumber = Math.floor((Math.random() * 20) + 1);
