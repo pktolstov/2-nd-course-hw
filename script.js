@@ -29,4 +29,30 @@ function checkGuess() {
 
 
 
+const startButtonSimpleMath = document.getElementById('startButtonSimpleMath');
+
+function startSimpleMathGame() {
+    let theFirstNumber = Math.floor((Math.random() * 20) + 1);
+let theSecondNumber = Math.floor((Math.random() * 20) + 1);
+const mathActions = ['+', '-', '*', '/'];
+let emediatAction = mathActions[Math.floor(Math.random() * 3)];
+let userResult = prompt(`Вычислите результат действия: ${theFirstNumber} ${emediatAction} ${theSecondNumber}`);
+let realResult
+if (emediatAction === mathActions[0]) {
+    realResult = theFirstNumber + theSecondNumber;
+} else if (emediatAction === mathActions[1]) {
+    realResult = theFirstNumber - theSecondNumber;
+} else if (emediatAction === mathActions[2]) {
+    realResult = theFirstNumber * theSecondNumber;
+} else if (emediatAction === mathActions[3]) {
+    realResult = theFirstNumber / theSecondNumber;
+}
+if (realResult === Number(userResult)) {
+    alert(`Ответ верный!`);
+} else {
+    alert(`Ответ неверный! Правильный ответ: ${realResult}\n Повезет в следующий раз!`)
+}
+}
+
+startButtonSimpleMath.addEventListener('click', startSimpleMathGame);
 
