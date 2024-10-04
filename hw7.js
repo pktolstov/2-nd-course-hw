@@ -76,12 +76,12 @@ function randomNumberFromRange(numberOne, numberTwo) {
 
     const minNumber = Math.ceil(Math.min(numberOne, numberTwo));
     const maxNumber = Math.floor(Math.max(numberOne, numberTwo));
-    return Math.floor(Math.random() * (maxNumber - minNumber) + minNumber);
+    return Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
 }
 console.log(randomNumberFromRange(6, 8));
 
 function getRandomArbitrary(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 console.log(getRandomArbitrary(6, 100));
@@ -96,17 +96,16 @@ console.log(engCurrentDate);
 //Вывести дату, которая наступит через 73 дня после текущей.
 
 let currentDate = new Date();
-let days73 = +currentDate + 73 * 24 * 60 * 60 * 1000;
-//console.log(days73);
-let searchDate = new Date(days73);
-console.log(searchDate);
+let futureDate = new Date(currentDate);  // Копируем текущую дату
+//console.log(futureDate);
+futureDate.setDate(currentDate.getDate() + 73); // Прибавляем 73 дня
 
-let newDateTo73 = new Date(currentDate.setDate(73));
-currentDate.setDate(73);
-console.log(currentDate.getDate());
-console.log(newDateTo73);
+console.log(futureDate);
 
-// Непонятно, как сделать корректно с помощью методов getDate(), setDate()
+
+
+
+
 
 //Task 10
 // Написать функцию, которая принимает дату и возвращает ее в формате:
