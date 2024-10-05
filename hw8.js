@@ -32,13 +32,13 @@ each(["Глеб", "Олег", "Татьяна", "Платон"], log);
 //Task1
 //С помощью метода массива sort отсортируйте массив people 
 //по возрастанию возраста и выведите результат в консоль.
-const people = [
+const peopleFirstTask = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
 ];
-console.log(people.sort((a, b) => a.age - b.age));
+console.log(peopleFirstTask.sort((a, b) => a.age - b.age));
 
 //Task 2
 //Реализуйте функцию filter, которая должна работать аналогично методу массива filter. 
