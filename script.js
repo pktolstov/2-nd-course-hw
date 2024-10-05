@@ -56,3 +56,54 @@ if (realResult === Number(userResult)) {
 
 startButtonSimpleMath.addEventListener('click', startSimpleMathGame);
 
+
+
+
+const startButtonReverseText = document.getElementById('startButtonReverseText');
+
+function startReverseTextGame() {
+    let userStroke = prompt('Введите строку или слово');
+    newUserStroke = userStroke.split('').reverse().join('');
+    alert(`${userStroke} наоборот: ${newUserStroke}`);
+}
+startButtonReverseText.addEventListener('click', startReverseTextGame);
+
+
+
+const startButtonQuizz = document.getElementById('startButtonQuizz');
+function startQuizzGame() {
+    const quiz = [
+        {
+            question: "Какого цвета небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+    let scoreUser = 0
+    quiz.forEach((key) => {
+        console.log(key);
+        console.log(key['correctAnswer']);
+        let userAnswer = Number(prompt(`Введите номер ответа на вопрос:\n${key['question']}\nВарианты ответов:\n${key['options'][0]}\n${key['options'][1]}\n${key['options'][2]}\n `));
+
+        if (userAnswer === key['correctAnswer']) {
+            scoreUser += 1;
+            alert('Верно!')
+        } else {
+            alert('Неверно!')
+        }
+        
+    })
+    let finalAlert = `Вы ответили верно на ${scoreUser} вопросов`;
+    alert(finalAlert);
+}
+startButtonQuizz.addEventListener('click', startQuizzGame);
