@@ -33,25 +33,25 @@ const startButtonSimpleMath = document.getElementById('startButtonSimpleMath');
 
 function startSimpleMathGame() {
     let theFirstNumber = Math.floor((Math.random() * 20) + 1);
-let theSecondNumber = Math.floor((Math.random() * 20) + 1);
-const mathActions = ['+', '-', '*', '/'];
-let emediatAction = mathActions[Math.floor(Math.random() * 3)];
-let userResult = prompt(`Вычислите результат действия: ${theFirstNumber} ${emediatAction} ${theSecondNumber}`);
-let realResult
-if (emediatAction === mathActions[0]) {
-    realResult = theFirstNumber + theSecondNumber;
-} else if (emediatAction === mathActions[1]) {
-    realResult = theFirstNumber - theSecondNumber;
-} else if (emediatAction === mathActions[2]) {
-    realResult = theFirstNumber * theSecondNumber;
-} else if (emediatAction === mathActions[3]) {
-    realResult = theFirstNumber / theSecondNumber;
-}
-if (realResult === Number(userResult)) {
-    alert(`Ответ верный!`);
-} else {
-    alert(`Ответ неверный! Правильный ответ: ${realResult}\n Повезет в следующий раз!`)
-}
+    let theSecondNumber = Math.floor((Math.random() * 20) + 1);
+    const mathActions = ['+', '-', '*', '/'];
+    let emediatAction = mathActions[Math.floor(Math.random() * 3)];
+    let userResult = prompt(`Вычислите результат действия: ${theFirstNumber} ${emediatAction} ${theSecondNumber}`);
+    let realResult
+    if (emediatAction === mathActions[0]) {
+        realResult = theFirstNumber + theSecondNumber;
+    } else if (emediatAction === mathActions[1]) {
+        realResult = theFirstNumber - theSecondNumber;
+    } else if (emediatAction === mathActions[2]) {
+        realResult = theFirstNumber * theSecondNumber;
+    } else if (emediatAction === mathActions[3]) {
+        realResult = theFirstNumber / theSecondNumber;
+    }
+    if (realResult === Number(userResult)) {
+        alert(`Ответ верный!`);
+    } else {
+        alert(`Ответ неверный! Правильный ответ: ${realResult}\n Повезет в следующий раз!`)
+    }
 }
 
 startButtonSimpleMath.addEventListener('click', startSimpleMathGame);
@@ -101,9 +101,36 @@ function startQuizzGame() {
         } else {
             alert('Неверно!')
         }
-        
+
     })
     let finalAlert = `Вы ответили верно на ${scoreUser} вопросов`;
     alert(finalAlert);
 }
 startButtonQuizz.addEventListener('click', startQuizzGame);
+
+
+
+const startButtonStoneClippersPaper = document.getElementById('startButtonStoneClippersPaper');
+
+function startStoneClippersPaperGame() {
+    varyArray = ['камень', 'ножницы', 'бумага'];
+    let machineAnswer = Math.floor(Math.random() * 3);
+    console.log(machineAnswer);
+    let playerAnswer = Number(prompt('Введите свой вариант:\n 1: камень; 2: ножницы; 3: бумага ')) - 1;
+    if (playerAnswer < 0 || playerAnswer > 2) {
+        alert('Вы ввели некорректный вариант. Введите число от 1 до 3');
+    } else if (playerAnswer === machineAnswer) {
+        alert(`В этом раунде ничья! Ваш ответ ${varyArray[playerAnswer]}\nОтвет робота: ${varyArray[machineAnswer]}`);
+    } else if (playerAnswer > machineAnswer) {
+        if (playerAnswer === 2 && machineAnswer === 0) {
+            alert(`Вы выиграли! Ваш ответ сильнее ${varyArray[playerAnswer]}\n против робота: ${varyArray[machineAnswer]}`);
+        } else {
+            alert(`Вы проиграли! Ваш ответ ${varyArray[playerAnswer]}\n против робота: ${varyArray[machineAnswer]}`);
+        }
+    } else {
+        alert(`Вы выиграли! ${varyArray[playerAnswer]}\n сильнее против робота: ${varyArray[machineAnswer]}`);
+    }
+    }
+
+
+startButtonStoneClippersPaper.addEventListener('click', startStoneClippersPaperGame);
