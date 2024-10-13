@@ -3,9 +3,9 @@
 const taskOneHeading = document.querySelector('.task-one-heading');
 const taskOneButton = document.querySelector('.task-one-button');
 
-taskOneButton.addEventListener('click', function() {
+taskOneButton.addEventListener('click', function () {
     taskOneHeading.style.display === 'none' ? taskOneHeading.style.display = 'initial' : taskOneHeading.style.display = 'none'
-    });
+});
 
 // Непонятно, как сделать, чтобы после отбражения, кноплка оказалась на другой строке от заголовка.
 
@@ -22,15 +22,15 @@ taskTwoButton.addEventListener('click', function () {
 // создайте кнопку, которая меняет текст в заголовке <h1>
 const taskThreeHeader = document.querySelector('.task-three-header');
 const taskThreeButton = document.querySelector('.task-three-button');
-taskThreeButton.addEventListener('click', function() {
+taskThreeButton.addEventListener('click', function () {
     taskThreeHeader.textContent = 'Привет, Мир!'
-}); 
+});
 
 // Task4
 // найдите все элементы с классом description и измените их текст на «Измененный текст».
 const taskFourDescription = document.querySelectorAll('.description');
 const taskFourButton = document.querySelector('.task-four-button');
-taskFourButton.addEventListener('click', function() {
+taskFourButton.addEventListener('click', function () {
     taskFourDescription.forEach(element => {
         element.textContent = 'Измененный текст';
     });
@@ -52,17 +52,17 @@ taskFiveButton.addEventListener('click', function () {
 // создайте кнопку, которая добавляет новый элемент <p> с текстом в конец документа.
 
 const taskSixCreateButton = document.querySelector('.task-six-button');
-const taskSixCreateElement = document.createElement('p');
-taskSixCreateButton.addEventListener('click', function() {
+taskSixCreateButton.addEventListener('click', function () {
+    const taskSixCreateElement = document.createElement('p');
     document.body.appendChild(taskSixCreateElement);
     taskSixCreateElement.textContent = 'Новый абзац';
 });
 
 //Task7
 // создайте кнопку, которая удаляет первый элемент <p> с классом description
-const taskSevenParagraph = document.querySelector('.decription-seven');
 const taskSevenButton = document.querySelector('.task-seven-button');
 taskSevenButton.addEventListener('click', function () {
+    const taskSevenParagraph = document.querySelector('.decription-seven');
     taskSevenParagraph.remove();
 });
 
