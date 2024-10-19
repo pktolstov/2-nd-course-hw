@@ -122,14 +122,48 @@ $game_h2_font_size: 32px;
         left: 58%;
     }
 
-    &__dynamic-frame {
-        position: absolute;
-        left: -30px;
-        height: 90px;
-        width: 100.5vw;
-        background-color: $color_green;
-        margin-top: 156px;
+}
+
+.dynamic-frame {
+    position: relative;
+    height: 90px;
+    width: 3220px;
+    background-color: $color_green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 51px;
+    padding-left: 49px;
+    padding-right: 49px;
+    animation: scroll-left 10s linear infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+
+    &__text {
+        color: rgb(32, 32, 39);
+        font-family: $font_family_common;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+        white-space: nowrap;
+
     }
+
+    @keyframes scroll-left {
+        from {
+            transform: translatex(0%);
+        }
+
+        to {
+            transform: translatex(calc(100vw - 3220px));
+        }
+    }
+
+
 }
 
 .title {
@@ -314,6 +348,7 @@ $game_h2_font_size: 32px;
 
     }
 
+
     &__button-p {
         width: 80px;
         height: 18px;
@@ -390,6 +425,7 @@ $game_h2_font_size: 32px;
 
         }
     }
+
 
     .card-img-5 {
         background-image: url(img/game_frame5_1.svg);
@@ -476,6 +512,19 @@ $game_h2_font_size: 32px;
     &__button {
         margin-top: 32px;
     }
+
+}
+
+.button-hidden {
+    display: none;
+    height: 42px;
+    margin-top: 24px;
+    font-family: $font_family_common;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 142%;
+    letter-spacing: 0px;
+    text-align: center;
 
 }
 

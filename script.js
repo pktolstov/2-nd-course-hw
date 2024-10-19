@@ -130,7 +130,33 @@ function startStoneClippersPaperGame() {
     } else {
         alert(`Вы выиграли! ${varyArray[playerAnswer]}\n сильнее против робота: ${varyArray[machineAnswer]}`);
     }
-    }
+}
 
 
 startButtonStoneClippersPaper.addEventListener('click', startStoneClippersPaperGame);
+
+
+//random-color-generator
+const startButtonColorGenerator = document.getElementById('startButtonColorGenerator');
+const buttonColorGanerator = document.getElementById('buttonColorGanerator');
+
+
+function RandomColorGenerator() {
+    const webPageBackground = document.getElementById('games-intro');
+    const webPageBackgroundGames = document.getElementById('games');
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    //return color;
+    webPageBackground.style.backgroundColor = color;
+    webPageBackgroundGames.style.backgroundColor = color;
+}
+
+function startColorGeneratorGame() {
+    buttonColorGanerator.style.display = 'block'
+}
+
+startButtonColorGenerator.addEventListener('click', startColorGeneratorGame);
+buttonColorGanerator.addEventListener('click', RandomColorGenerator);

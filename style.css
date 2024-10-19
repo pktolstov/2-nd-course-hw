@@ -98,13 +98,41 @@ a {
   top: -50%;
   left: 58%;
 }
-.top__dynamic-frame {
-  position: absolute;
-  left: -30px;
+
+.dynamic-frame {
+  position: relative;
   height: 90px;
-  width: 100.5vw;
+  width: 3220px;
   background-color: #BCEC30;
-  margin-top: 156px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 51px;
+  padding-left: 49px;
+  padding-right: 49px;
+  animation: scroll-left 10s linear infinite;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+.dynamic-frame__text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@keyframes scroll-left {
+  from {
+    transform: translatex(0%);
+  }
+  to {
+    transform: translatex(calc(100vw - 3220px));
+  }
 }
 
 .title {
@@ -404,6 +432,18 @@ a {
 }
 .mini-game-info__button {
   margin-top: 32px;
+}
+
+.button-hidden {
+  display: none;
+  height: 42px;
+  margin-top: 24px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 142%;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 .mini-game-item-guess-number {

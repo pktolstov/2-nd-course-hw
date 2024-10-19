@@ -42,18 +42,23 @@
             </section>
 
         </header>
-        <div class="top__dynamic-frame"></div>
+
     </div>
-    <div class="games-intro center">
-
-
-        <!--       <img class="games-intro__star1" src="img/star_small_grbrder.svg" alt="star">
-        <img class="games-intro__star2" src="img/star2_grbrder.svg" alt="star">
-        <img class="games-intro__star3" src="img/star_small_grbrder.svg" alt="star">
-        <img class="games-intro__star4" src="img/star2_grbrder.svg" alt="star">
-        <img class="games-intro__star5" src="img/star_small_grbrder.svg" alt="star">
-        <img class="games-intro__star6" src="img/star2_grbrder.svg" alt="star">
-         <img class="games-intro__star3" src="img/star_big_grbrder.svg" alt="star">   -->
+    <div class="dynamic-frame">
+        <h2 class="dynamic-frame__text">Викторина</h2>
+        <img src="img/star_small_black.svg" alt="star">
+        <h2 class="dynamic-frame__text">угадай число</h2>
+        <img src="img/star_small_black.svg" alt="star">
+        <h2 class="dynamic-frame__text">Переверни текст</h2>
+        <img src="img/star_small_black.svg" alt="star">
+        <h2 class="dynamic-frame__text">Простая арифметика</h2>
+        <img src="img/star_small_black.svg" alt="star">
+        <h2 class="dynamic-frame__text">Камень, ножницы, бумага</h2>
+        <img src="img/star_small_black.svg" alt="star">
+        <h2 class="dynamic-frame__text">Генератор случайных цветов</h2>
+        <img src="img/star_small_black.svg" alt="star">
+    </div>
+    <div class="games-intro center" id="games-intro">
         <div class="games-intro-title">
             <h2 class="games-intro-title__heading">Об играх</h2>
             <h2 class="games-intro-title__heading-mobile">Мини-игры</h2>
@@ -165,7 +170,7 @@
             </div>
 
         </section>
-        <section class="games center">
+        <section class="games center" id="games">
             <h2 class="games__heading games-intro-title__heading">Мини-игры</h2>
             <div class="games-block">
                 <div class="mini-game-item">
@@ -179,7 +184,7 @@
                         </div>
                         <div class="mini-game-item-guess-number" id="block-game">
                             <input class="mini-game-item-guess-number__check" type="number" id="guessInput"
-                                placeholder="Ваше число" />
+                                placeholder="Ваше число">
                             <button onclick="checkGuess()" class="mini-game-info__button top__button">Проверить</button>
                         </div>
                         <p class="mini-game-item-guess-number__answer top__description" id="result"></p>
@@ -228,7 +233,8 @@
                             </h3>
                             <p class="mini-game-info__description top__description">Сыграй в популярную игру<br>против
                                 компьютера.</p>
-                            <button id="startButtonStoneClippersPaper" class="mini-game-info__button top__button">Играть!</button>
+                            <button id="startButtonStoneClippersPaper"
+                                class="mini-game-info__button top__button">Играть!</button>
                         </div>
                     </div>
                     <div class="mini-game-img mini-game-img_5">
@@ -245,7 +251,10 @@
                                 кнопку<span class="ini-game-info-descktop-text-br"><br></span>фон страницы <span
                                     class="mini-game-info-mobile-text-br"><br></span>меняется
                                 на случайный.</p>
-                            <button class="mini-game-info__button top__button">Играть!</button>
+                            <button class="mini-game-info__button top__button"
+                                id="startButtonColorGenerator">Играть!</button>
+                            <button class=" top__button button-hidden" id="buttonColorGanerator">Изменить
+                                цвет</button>
                         </div>
                     </div>
                     <div class="mini-game-img mini-game-img_6"></div>
