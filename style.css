@@ -646,6 +646,25 @@ a {
     height: 51px;
     width: 108vw;
   }
+  .dynamic-frame {
+    width: 1717.4px;
+    height: 51.34px;
+    gap: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .dynamic-frame__text {
+    font-size: 16px;
+    text-align: left;
+  }
+  @keyframes scroll-left {
+    from {
+      transform: translatex(0%);
+    }
+    to {
+      transform: translatex(calc(100vw - 1770px));
+    }
+  }
   .games {
     padding-top: 0px;
     padding-bottom: 48px;
