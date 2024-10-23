@@ -5,7 +5,7 @@
     }
 
     .top {
-        height: 700px;
+        height: 649px;
         /*    background-image: url(img/star_big_mobile.svg); */
         background-image: url('data:image/svg+xml,%3Csvg width="337" height="621" viewBox="0 0 337 621" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M17.5 98.4408L21.7577 109.947L21.8375 110.163L22.0531 110.242L33.5592 114.5L22.0531 118.758L21.8375 118.837L21.7577 119.053L17.5 130.559L13.2423 119.053L13.1626 118.837L12.9469 118.758L1.44077 114.5L12.9469 110.242L13.1626 110.163L13.2423 109.947L17.5 98.4408Z" fill="%23BCEC30" stroke="%23202027"/%3E%3Cpath d="M64.5 65.4408L66.867 71.8376L66.9468 72.0532L67.1624 72.133L73.5592 74.5L67.1624 76.867L66.9468 76.9468L66.867 77.1624L64.5 83.5592L62.133 77.1624L62.0532 76.9468L61.8376 76.867L55.4408 74.5L61.8376 72.133L62.0532 72.0532L62.133 71.8376L64.5 65.4408Z" stroke="%23202027"/%3E%3Cpath d="M244 558.441L245.962 563.743L246.042 563.958L246.257 564.038L251.559 566L246.257 567.962L246.042 568.042L245.962 568.257L244 573.559L242.038 568.257L241.958 568.042L241.743 567.962L236.441 566L241.743 564.038L241.958 563.958L242.038 563.743L244 558.441Z" fill="%23BCEC30" stroke="%23202027"/%3E%3Cpath d="M285.5 581.506L290.295 595.129L290.371 595.346L290.585 595.429L303.621 600.5L290.585 605.571L290.371 605.654L290.295 605.871L285.5 619.494L280.705 605.871L280.629 605.654L280.415 605.571L267.379 600.5L280.415 595.429L280.629 595.346L280.705 595.129L285.5 581.506Z" stroke="%23202027"/%3E%3Cpath d="M341.226 10.1084C344.072 10.8901 423.284 43.9262 423.284 43.9262L339.242 52.8254L392.335 120.072L317.485 74.1373L309.858 151.995L288.761 70.0034L218.442 109.004L266.882 51.7587L180.917 47.8942L261.719 23.992L201.678 -44.2245L286.09 -5.05042L305.408 -80.6362L314.083 -4.88821L390.973 -57.1361L341.226 10.1084Z" fill="%23BCEC30" stroke="%23202027" stroke-miterlimit="10" stroke-linecap="round"/%3E%3C/svg%3E');
         background-repeat: no-repeat;
@@ -64,7 +64,7 @@
         }
 
         .title-mobile {
-            padding-top: 147px;
+            padding-top: 148px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -123,6 +123,30 @@
         &__dynamic-frame {
             height: 51px;
             width: 108vw;
+        }
+
+    }
+
+    .dynamic-frame {
+        width: 1717.4px;
+        height: 51.34px;
+        gap: 28px;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        &__text {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translatex(0%);
+            }
+
+            to {
+                transform: translatex(calc(100vw - 1770px));
+            }
         }
 
     }
@@ -242,6 +266,10 @@
 
     }
 
+    .games-block {
+        gap: 24px;
+    }
+
     .mini-game-item {
         flex-direction: column-reverse;
 
@@ -254,15 +282,22 @@
 
         width: 343px;
         height: auto;
-        padding: 29px;
+        padding: 0px;
+
 
     }
 
     .mini-game-info {
         width: auto;
         align-items: flex-start;
+        padding-top: 29px;
+        padding-left: 29px;
+        padding-right: 16px;
+        margin-bottom: 31px;
 
-
+        &__button {
+            margin-top: 33px;
+        }
 
         &__title {
             font-size: 32px;
@@ -285,11 +320,11 @@
 
     .mini-game-img {
         width: 343px;
-        height: 300px;
-        background-size: 105%;
+        height: 285px;
+        background-size: 101%;
         border-radius: $game_card_brdr_radius;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
 
         &_2 {
             background-size: 202%;
@@ -318,7 +353,7 @@
         &__rights {
             font-size: 16px;
             line-height: 20px;
-            padding-top: 40px;
+            padding-top: 45px;
             padding-bottom: 40px;
         }
     }

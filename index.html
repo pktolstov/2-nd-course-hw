@@ -23,13 +23,13 @@
         <!--       <img class="top__star5" src="img/group_star_big.svg" alt="star"> -->
         <header class="center">
             <section class="title">
-                <h1 class="top__title">Добро&nbsp;пожаловать<br>на мой&nbsp;сайт мини-игр</h1>
+                <h1 class="top__title">Добро&nbsp;пожаловать<br>на&nbsp;мой&nbsp;сайт&nbsp;мини-игр</h1>
                 <p class="top__description">
                     Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <span
                         class="top__description top__description_bold">«Поехали!»</span> и <span
                         class="top__description top__description_bold">приступай</span>.
                 </p>
-                <button class="top__button">Поехали!</button>
+                <button class="top__button" onclick="location.href='#games-intro';">Поехали!</button>
             </section>
             <section class="title-mobile">
                 <h1 class="title-mobile__h1">Добро<br>пожаловать<br>на мой&nbsp;сайт<br>мини-игр</h1>
@@ -38,22 +38,30 @@
                         class="title-mobile__description title-mobile__description_bold">«Поехали!»</span> и <span
                         class="title-mobile__description title-mobile__description_bold">приступай</span>.
                 </p>
-                <button class="title-mobile__button">Поехали!</button>
+                <button class="title-mobile__button" onclick="location.href='#games-intro';">Поехали!</button>
             </section>
 
         </header>
-        <div class="top__dynamic-frame"></div>
+
     </div>
-    <div class="games-intro center">
+    <div class="dynamic-block">
+        <div class="dynamic-frame">
+            <h2 class="dynamic-frame__text">Викторина</h2>
+            <img src="img/star_small_black.svg" alt="star">
+            <h2 class="dynamic-frame__text">угадай число</h2>
+            <img src="img/star_small_black.svg" alt="star">
+            <h2 class="dynamic-frame__text">Переверни текст</h2>
+            <img src="img/star_small_black.svg" alt="star">
+            <h2 class="dynamic-frame__text">Простая арифметика</h2>
+            <img src="img/star_small_black.svg" alt="star">
+            <h2 class="dynamic-frame__text">Камень, ножницы, бумага</h2>
+            <img src="img/star_small_black.svg" alt="star">
+            <h2 class="dynamic-frame__text">Генератор случайных цветов</h2>
+            <img src="img/star_small_black.svg" alt="star">
+        </div>
+    </div>
 
-
-        <!--       <img class="games-intro__star1" src="img/star_small_grbrder.svg" alt="star">
-        <img class="games-intro__star2" src="img/star2_grbrder.svg" alt="star">
-        <img class="games-intro__star3" src="img/star_small_grbrder.svg" alt="star">
-        <img class="games-intro__star4" src="img/star2_grbrder.svg" alt="star">
-        <img class="games-intro__star5" src="img/star_small_grbrder.svg" alt="star">
-        <img class="games-intro__star6" src="img/star2_grbrder.svg" alt="star">
-         <img class="games-intro__star3" src="img/star_big_grbrder.svg" alt="star">   -->
+    <div class="games-intro center" id="games-intro">
         <div class="games-intro-title">
             <h2 class="games-intro-title__heading">Об играх</h2>
             <h2 class="games-intro-title__heading-mobile">Мини-игры</h2>
@@ -165,7 +173,7 @@
             </div>
 
         </section>
-        <section class="games center">
+        <section class="games center" id="games">
             <h2 class="games__heading games-intro-title__heading">Мини-игры</h2>
             <div class="games-block">
                 <div class="mini-game-item">
@@ -179,7 +187,7 @@
                         </div>
                         <div class="mini-game-item-guess-number" id="block-game">
                             <input class="mini-game-item-guess-number__check" type="number" id="guessInput"
-                                placeholder="Ваше число" />
+                                placeholder="Ваше число">
                             <button onclick="checkGuess()" class="mini-game-info__button top__button">Проверить</button>
                         </div>
                         <p class="mini-game-item-guess-number__answer top__description" id="result"></p>
@@ -228,7 +236,8 @@
                             </h3>
                             <p class="mini-game-info__description top__description">Сыграй в популярную игру<br>против
                                 компьютера.</p>
-                            <button id="startButtonStoneClippersPaper" class="mini-game-info__button top__button">Играть!</button>
+                            <button id="startButtonStoneClippersPaper"
+                                class="mini-game-info__button top__button">Играть!</button>
                         </div>
                     </div>
                     <div class="mini-game-img mini-game-img_5">
@@ -245,7 +254,10 @@
                                 кнопку<span class="ini-game-info-descktop-text-br"><br></span>фон страницы <span
                                     class="mini-game-info-mobile-text-br"><br></span>меняется
                                 на случайный.</p>
-                            <button class="mini-game-info__button top__button">Играть!</button>
+                            <button class="mini-game-info__button top__button"
+                                id="startButtonColorGenerator">Играть!</button>
+                            <button class=" top__button button-hidden" id="buttonColorGanerator">Изменить
+                                цвет</button>
                         </div>
                     </div>
                     <div class="mini-game-img mini-game-img_6"></div>

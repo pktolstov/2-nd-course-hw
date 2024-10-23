@@ -35,8 +35,8 @@ function startSimpleMathGame() {
     let theFirstNumber = Math.floor((Math.random() * 20) + 1);
     let theSecondNumber = Math.floor((Math.random() * 20) + 1);
     const mathActions = ['+', '-', '*', '/'];
-    let emediatAction = mathActions[Math.floor(Math.random() * 3)];
-    let userResult = prompt(`Вычислите результат действия: ${theFirstNumber} ${emediatAction} ${theSecondNumber}`);
+    let emediatAction = mathActions[Math.floor(Math.random() * 4)];
+    let userResult = prompt(`Вычислите результат действия, ответ округлите до сотых: ${theFirstNumber} ${emediatAction} ${theSecondNumber}`);
     let realResult
     if (emediatAction === mathActions[0]) {
         realResult = theFirstNumber + theSecondNumber;
@@ -45,7 +45,8 @@ function startSimpleMathGame() {
     } else if (emediatAction === mathActions[2]) {
         realResult = theFirstNumber * theSecondNumber;
     } else if (emediatAction === mathActions[3]) {
-        realResult = theFirstNumber / theSecondNumber;
+        realResult = parseFloat((theFirstNumber / theSecondNumber).toFixed(2));
+        userResult = userResult.replace(',', '.');
     }
     if (realResult === Number(userResult)) {
         alert(`Ответ верный!`);
@@ -93,9 +94,9 @@ function startQuizzGame() {
     quiz.forEach((key) => {
         console.log(key);
         console.log(key['correctAnswer']);
-        let userAnswer = Number(prompt(`Введите номер ответа на вопрос:\n${key['question']}\nВарианты ответов:\n${key['options'][0]}\n${key['options'][1]}\n${key['options'][2]}\n `));
+        let userAnswer = Number(prompt(`Введите номер ответа на вопрос:\n${key.question}\nВарианты ответов:\n${key.options[0]}\n${key['options'][1]}\n${key['options'][2]}\n `));
 
-        if (userAnswer === key['correctAnswer']) {
+        if (userAnswer === key.correctAnswer) {
             scoreUser += 1;
             alert('Верно!')
         } else {
@@ -130,7 +131,33 @@ function startStoneClippersPaperGame() {
     } else {
         alert(`Вы выиграли! ${varyArray[playerAnswer]}\n сильнее против робота: ${varyArray[machineAnswer]}`);
     }
-    }
+}
 
 
 startButtonStoneClippersPaper.addEventListener('click', startStoneClippersPaperGame);
+
+
+//random-color-generator
+const startButtonColorGenerator = document.getElementById('startButtonColorGenerator');
+const buttonColorGanerator = document.getElementById('buttonColorGanerator');
+
+
+function RandomColorGenerator() {
+    const webPageBackground = document.getElementById('games-intro');
+    const webPageBackgroundGames = document.getElementById('games');
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    //return color;
+    webPageBackground.style.backgroundColor = color;
+    webPageBackgroundGames.style.backgroundColor = color;
+}
+
+function startColorGeneratorGame() {
+    buttonColorGanerator.style.display = 'block'
+}
+
+startButtonColorGenerator.addEventListener('click', startColorGeneratorGame);
+buttonColorGanerator.addEventListener('click', RandomColorGenerator);
