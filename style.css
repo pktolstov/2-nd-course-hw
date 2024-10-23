@@ -29,7 +29,7 @@ a {
   background-position-y: calc(0% - 310px);
 }
 .top__title {
-  font-size: 63px;
+  font-size: 64px;
   font-family: Montserrat;
   flood-color: #202027;
   font-weight: 700;
@@ -99,11 +99,17 @@ a {
   left: 58%;
 }
 
+.dynamic-block {
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #BCEC30;
+}
+
 .dynamic-frame {
   position: relative;
   height: 90px;
-  width: 3220px;
-  background-color: #BCEC30;
+  /*width: 3220px;
+  background-color: $color_green;  */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -113,7 +119,6 @@ a {
   padding-right: 49px;
   animation: scroll-left 10s linear infinite;
   animation-direction: alternate;
-  overflow: hidden;
 }
 .dynamic-frame__text {
   color: rgb(32, 32, 39);
@@ -374,7 +379,7 @@ a {
 
 .games {
   background-color: #202027;
-  padding-top: 46px;
+  padding-top: 50px;
   padding-bottom: 144px;
   background-image: url(img/star_small_grbrder.svg);
   background-repeat: no-repeat;
@@ -413,7 +418,7 @@ a {
 .mini-game-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .mini-game-info__title {
   color: #202027;
