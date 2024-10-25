@@ -127,6 +127,58 @@
 
     }
 
+    .common-description {
+        padding-top: 24px;
+        font-family: $font_family_common;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+        &_bold {
+            font-weight: 600;
+        }
+    }
+
+    .common-mobile-description {
+        padding-top: 24px;
+        font-family: $font_family_common;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+
+        &_bold {
+            font-weight: 600;
+        }
+    }
+
+    .common-button {
+        width: 285px;
+        height: 55px;
+        margin-top: 36px;
+        box-sizing: border-box;
+        border: 1 solid $color_black;
+        border-radius: $button_border_radius;
+        background: $color_black;
+        color: #fff;
+        font-family: $font_family_common;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 142%;
+        letter-spacing: 0px;
+        text-align: center;
+
+
+        &:hover {
+            background: #fff;
+            color: $color_black;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+    }
+
     .dynamic-frame {
         width: 1717.4px;
         height: 51.34px;
@@ -152,8 +204,16 @@
     }
 
     .games {
+        padding-top: 2px;
+        padding-bottom: 53px;
+    }
+
+    .common-games-heading {
+        display: none;
+    }
+
+    .common-description {
         padding-top: 0px;
-        padding-bottom: 48px;
     }
 
     .games-intro {
@@ -170,7 +230,7 @@
 
     .games-intro-title {
         padding-top: 48px;
-        padding-bottom: 48px;
+        padding-bottom: 46px;
 
         &__heading {
             display: none;
@@ -331,11 +391,15 @@
         }
 
         &_3 {
-            background-size: 202%;
+            background-size: 195%;
+            background-position-x: 53%;
+            background-position-y: 49%;
         }
 
         &_6 {
-            background-size: 155%;
+            background-size: 144%;
+            background-position-x: 36%;
+            background-position-y: 49%;
         }
 
 
@@ -348,12 +412,12 @@
     }
 
     .footer {
-        height: 100px;
+        height: 101px;
 
         &__rights {
             font-size: 16px;
             line-height: 20px;
-            padding-top: 45px;
+            padding-top: 42px;
             padding-bottom: 40px;
         }
     }
